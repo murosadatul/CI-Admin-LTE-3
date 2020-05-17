@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+// seting default system timezone 
+date_default_timezone_set('Asia/Bangkok');
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -23,7 +24,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+//$config['base_url'] = '';
+
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] ==8443)?'https://':'http://' ;
+$root = $protocol.$_SERVER['HTTP_HOST'];
+$root .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+$pc_root = explode("/", $root);
+
+$config['base_url'] = $root;
 
 /*
 |--------------------------------------------------------------------------
