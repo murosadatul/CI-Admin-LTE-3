@@ -83,3 +83,23 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+// LOAD TEMPLATE PLUGIN
+defined('PLUG_CHARTJS')			OR define('PLUG_CHARTJS', 'chartjs');
+defined('PLUG_TEMPUSDOMINUS') 	OR define('PLUG_TEMPUSDOMINUS', 'tempusdominus');
+defined('PLUG_JQVMAP')   		OR define('PLUG_JQVMAP', 'jqvmap');
+defined('PLUG_JQUERYUI') 		OR define('PLUG_JQUERYUI','jquery-ui');
+defined('PLUG_JQUERYKNOB') 		OR define('PLUG_JQUERYKNOB','jquery-knob');
+defined('PLUG_SUMMERNOTE') 		OR define('PLUG_SUMMERNOTE','summernote');
+defined('PLUG_SPARKLINE') 		OR define('PLUG_SPARKLINE','sparkline');
+defined('PLUG_SELECT2')  		OR define('PLUG_SELECT2', 'select2');
+defined('PLUG_ICHECK')   		OR define('PLUG_ICHECK', 'icheck');
+defined('PLUG_DATERANGEPICKER') OR define('PLUG_DATERANGEPICKER', 'daterangepicker');
+defined('PLUG_DATEPICKER') 		OR define('PLUG_DATEPICKER', 'datepicker');
+defined('PLUG_COLORPICKER')		OR define('PLUG_COLORPICKER', 'colorpicker');
+defined('PLUG_DUALLISTBOX')		OR define('PLUG_DUALLISTBOX', 'duallistbox');
+defined('PLUG_INPUTMASK')		OR define('PLUG_INPUTMASK', 'inputmask');
+defined('PLUG_SWITCH')			OR define('PLUG_SWITCH', 'switch');
+defined('PLUG_JQUERYVALIDATION')OR define('PLUG_JQUERYVALIDATION', 'jquery-validation');
+defined('PLUG_CUSTOMFILEINPUT')	OR define('PLUG_CUSTOMFILEINPUT', 'custom-file-input');
