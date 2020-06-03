@@ -2,13 +2,13 @@
   <!-- Left navbar links -->
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" data-widget="pushmenu" href="{base_url}assets/#"><i class="fas fa-bars"></i></a>
+      <a class="nav-link" data-widget="pushmenu" href="{base_url}"><i class="fas fa-bars"></i></a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-      <a href="{base_url}assets/index3.html" class="nav-link">Home</a>
+      <a href="{base_url}" class="nav-link">Home</a>
     </li>
     <li class="nav-item d-none d-sm-inline-block">
-      <a href="{base_url}assets/#" class="nav-link">Contact</a>
+      <a href="#" class="nav-link">Contact</a>
     </li>
   </ul>
 
@@ -28,7 +28,7 @@
   <ul class="navbar-nav ml-auto">
     <!-- Messages Dropdown Menu -->
     <li class="nav-item dropdown">
-      <a class="nav-link" data-toggle="dropdown" href="{base_url}assets/#">
+      <a class="nav-link" data-toggle="dropdown" href="{base_url}">
         <i class="far fa-comments"></i>
         <span class="badge badge-danger navbar-badge">3</span>
       </a>

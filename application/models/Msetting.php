@@ -16,15 +16,7 @@ class Msetting extends CI_Model {
 		return $arr;
 	}
 
-	function by_category($category)
-	{
-		$this->db->where('category', $category);
-		$q = $this->db->get('sys_setting');
-		$data = $q->result_array();
-		return $data;
-	}
-
 }
 
-/* End of file Model_setting.php */
-/* Location: ./application/models/Model_setting.php */
+/* End of file Msetting.php */
+/* Location: ./application/models/Msetting.php */

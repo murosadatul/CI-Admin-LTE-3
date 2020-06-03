@@ -1,7 +1,7 @@
 <?php $active_page=$this->uri->segment(2) ?>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="{base_url}assets/index3.html" class="brand-link">
+  <a href="{base_url}" class="brand-link">
     <img src="{base_url}assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
          style="opacity: .8">
     <span class="brand-text font-weight-light">AdminLTE 3</span>
@@ -39,8 +39,8 @@
             </p>
           </a>
         </li>
-        <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
+        <li class="nav-item has-treeview <?= (($active_page=='chartjs' || $active_page=='chartflot' || $active_page=='chartinline'  )?'menu-open':'');?>">
+          <a href="#" class="nav-link <?= (($active_page=='chartjs' || $active_page=='chartflot' || $active_page=='chartinline'  )?'active':'');?>">
             <i class="nav-icon fas fa-chart-pie"></i>
             <p>
               Charts
@@ -49,36 +49,35 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{base_url}assets/pages/charts/chartjs.html" class="nav-link">
+              <a href="{base_url}sample/chartjs" class="nav-link <?= (($active_page=='chartjs')?'active':'');?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>ChartJS</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{base_url}assets/pages/charts/flot.html" class="nav-link">
+              <a href="{base_url}sample/chartflot" class="nav-link <?= (($active_page=='chartflot')?'active':'');?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Flot</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{base_url}assets/pages/charts/inline.html" class="nav-link">
+              <a href="{base_url}sample/chartinline" class="nav-link <?= (($active_page=='chartinline')?'active':'');?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Inline</p>
               </a>
             </li>
           </ul>
         </li>
-        <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
+        <li class="nav-item">
+          <a href="{base_url}sample/modal" class="nav-link <?= (($active_page=='modal')?'active':'');?>">
             <i class="nav-icon fas fa-tree"></i>
             <p>
               Modals & Alerts
-              <i class="fas fa-angle-left right"></i>
             </p>
           </a>
         </li>
-        <li class="nav-item has-treeview <?= (($active_page=='form_advanced' || $active_page=='form_general' || $active_page=='form_editor' || $active_page=='form_validationl')?'menu-open':'');?>">
-          <a href="#" class="nav-link <?= (($active_page=='form_advanced' || $active_page=='form_general' || $active_page=='form_editor' || $active_page=='form_validationl')?'active':'');?>">
+        <li class="nav-item has-treeview <?= (($active_page=='form_advanced' || $active_page=='form_general' || $active_page=='form_editor' || $active_page=='form_validation')?'menu-open':'');?>">
+          <a href="#" class="nav-link <?= (($active_page=='form_advanced' || $active_page=='form_general' || $active_page=='form_editor' || $active_page=='form_validation')?'active':'');?>">
             <i class="nav-icon fas fa-edit"></i>
             <p>Forms<i class="fas fa-angle-left right"></i></p>
           </a>
@@ -109,8 +108,8 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
+        <li class="nav-item has-treeview <?= (($active_page=='simpletable' || $active_page=='datatable' || $active_page=='jsgrid')?'menu-open':'');?>">
+          <a href="#" class="nav-link <?= (($active_page=='simpletable' || $active_page=='datatable' || $active_page=='jsgrid')?'active':'');?>">
             <i class="nav-icon fas fa-table"></i>
             <p>
               Tables
@@ -119,19 +118,19 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{base_url}assets/pages/tables/simple.html" class="nav-link">
+              <a href="{base_url}sample/simpletable" class="nav-link <?= (($active_page=='simpletable')?'active':'');?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Simple Tables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{base_url}assets/pages/tables/data.html" class="nav-link">
+              <a href="{base_url}sample/datatable" class="nav-link <?= (($active_page=='datatable')?'active':'');?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>DataTables</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{base_url}assets/pages/tables/jsgrid.html" class="nav-link">
+              <a href="{base_url}sample/jsgrid" class="nav-link <?= (($active_page=='jsgrid')?'active':'');?>">
                 <i class="far fa-circle nav-icon"></i>
                 <p>jsGrid</p>
               </a>
@@ -140,7 +139,7 @@
         </li>
         <li class="nav-header">EXAMPLES</li>
         <li class="nav-item">
-          <a href="{base_url}assets/pages/calendar.html" class="nav-link">
+          <a href="{base_url}sample/fullcalendar" class="nav-link <?= (($active_page=='fullcalendar')?'active':'');?>">
             <i class="nav-icon far fa-calendar-alt"></i>
             <p>
               Calendar

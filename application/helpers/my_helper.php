@@ -217,3 +217,6 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 		$hasil = ['perorangan'=>'Perorangan/Double','beregu'=>'Beregu(2-11)','massal'=>'Massal'];
 		return $hasil[$jumlah];
 	}
+
+/* End of file my_helper.php */
+/* Location: ./application/helpers/my_helper.php */
