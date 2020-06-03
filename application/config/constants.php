@@ -103,3 +103,9 @@ defined('PLUG_INPUTMASK')		OR define('PLUG_INPUTMASK', 'inputmask');
 defined('PLUG_SWITCH')			OR define('PLUG_SWITCH', 'switch');
 defined('PLUG_JQUERYVALIDATION')OR define('PLUG_JQUERYVALIDATION', 'jquery-validation');
 defined('PLUG_CUSTOMFILEINPUT')	OR define('PLUG_CUSTOMFILEINPUT', 'custom-file-input');
+defined('PLUG_TOASTR')			OR define('PLUG_TOASTR', 'toastr');
+defined('PLUG_SWEETALERT')		OR define('PLUG_SWEETALERT', 'sweetalert');
+defined('PLUG_DATATABLE')		OR define('PLUG_DATATABLE', 'datatable');
+defined('PLUG_JSGRID')			OR define('PLUG_JSGRID', 'jsgrid');
+defined('PLUG_FULLCALENDAR')	OR define('PLUG_FULLCALENDAR', 'fullcalendar');
+
